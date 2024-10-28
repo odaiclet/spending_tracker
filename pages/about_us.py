@@ -18,7 +18,7 @@ Nolan: Email"""
 st.markdown(
     """
     <style>
-        div[data-testid="column"]:nth-of-type(1)
+        .column
         {
             text-align: end;
         } 
