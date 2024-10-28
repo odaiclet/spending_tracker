@@ -9,13 +9,13 @@ from styles.nav_bar_styles import styles
 st.set_page_config(initial_sidebar_state="collapsed",
                    layout="wide",
                    page_title="Discover Spending Tracker",
-                   page_icon="images/top_logo.svg"
+                   page_icon="images/syntax_society_logo_only.svg"
                    )
 
 # Top navigation bar setup
 page = st_navbar(
     ["Dashboard", "Spending Score", "Spending Tracker", "About Us"],
-    styles=styles, logo_page="Dashboard", logo_path="images/logo_white.svg",
+    styles=styles, logo_page="Dashboard", logo_path="images/syntax_society_logo_only.svg",
     options={"show_menu": True, "show_sidebar": True, "hide_nav": True}
 )
 
@@ -26,7 +26,7 @@ st.html(html_style)
 
 # Sidebar navigation using buttons
 
-st.sidebar.image("images/logo_white.svg", width=None)
+st.sidebar.image("images/syntax_society_logo.svg", width=None)
 with st.sidebar:
     dashboard_button = st.button("Dashboard",)
     spending_score_button = st.button("Spending Score")
