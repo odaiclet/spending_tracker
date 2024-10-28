@@ -23,16 +23,17 @@ st.markdown(
             text-align: end;
         } 
     </style>
-    """,unsafe_allow_html=True
+    """, unsafe_allow_html=True
 )
 
+
 def about_us():
-    
+
     st.title("About Us")
     col1, col2, col3, = st.columns(3)
     col4, col5, col6, = st.columns(3)
 
-    with st.container():
+    with st.container(border=True, height=None):
         col1.write("column 1")
         col2.write("column 2")
         col3.write("column 3")
@@ -42,4 +43,4 @@ def about_us():
         col5.write("column 2")
         col6.write("column 3")
 
-    #col1.write(longmessage)
+    # col1.write(longmessage)
