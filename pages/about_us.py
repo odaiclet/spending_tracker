@@ -14,8 +14,32 @@ Juan: Email
 Destiny: Email
 
 Nolan: Email"""
-def about_us():
-    col1, col2 = st.columns(2)
 
-    col1.title("About Us")
-    col1.write(longmessage)
+st.markdown(
+    """
+    <style>
+        div[data-testid="column"]:nth-of-type(1)
+        {
+            text-align: end;
+        } 
+    </style>
+    """,unsafe_allow_html=True
+)
+
+def about_us():
+    
+    st.title("About Us")
+    col1, col2, col3, = st.columns(3)
+    col4, col5, col6, = st.columns(3)
+
+    with st.container():
+        col1.write("column 1")
+        col2.write("column 2")
+        col3.write("column 3")
+
+    with st.container():
+        col4.write("column 1")
+        col5.write("column 2")
+        col6.write("column 3")
+
+    #col1.write(longmessage)
