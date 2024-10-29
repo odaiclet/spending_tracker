@@ -1,3 +1,4 @@
+#
 import streamlit as st
 from utils.config import set_app_config
 set_app_config()
@@ -6,6 +7,7 @@ from streamlit_navigation_bar import st_navbar
 import pages as pg
 import matplotlib as mt
 import pandas as pd
+import streamlit_shadcn_ui as ui
 
 
 

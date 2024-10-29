@@ -1,4 +1,17 @@
 streamlit==1.37.0
 streamlit-navigation-bar==3.3.0
+streamlit-camera-input-live==0.2.0
+streamlit-card==1.0.2
+streamlit-embedcode==0.1.2
+streamlit-extras==0.5.0
+streamlit-faker==0.0.3
+streamlit-image-coordinates==0.1.9
+streamlit-keyup==0.2.4
+streamlit-navigation-bar==3.3.0
+streamlit-shadcn-ui==0.1.18
+streamlit-toggle-switch==1.0.2
+streamlit-vertical-slider==2.5.5
 pandas==2.2.3
 matplotlib==3.9.2
+SQLAlchemy==2.0.36
+psycopg2==2.9.10
