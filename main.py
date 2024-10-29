@@ -1,14 +1,13 @@
 import streamlit as st
-import pandas as pd
-import matplotlib as mt
-import pages as pg
-st.set_page_config(initial_sidebar_state="collapsed",
-                   layout="wide",
-                   page_title="Discover Spending Tracker",
-                   page_icon="images/syntax_society_logo_only.svg"
-                   )
-from streamlit_navigation_bar import st_navbar
+from utils.config import set_app_config
+set_app_config()
 from styles.nav_bar_styles import styles
+from streamlit_navigation_bar import st_navbar
+import pages as pg
+import matplotlib as mt
+import pandas as pd
+
+
 
 # Set up the page configuration
 
