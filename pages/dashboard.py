@@ -4,6 +4,8 @@ import streamlit_shadcn_ui as ui
 
 def dashboard():
     st.title("Dashboard")
+    st.write(f'Welcome *{st.session_state["name"]}*')
+    
     cols = st.columns(3)
     with cols[0]:
         ui.metric_card(title="Spending Score", content="5.33",
