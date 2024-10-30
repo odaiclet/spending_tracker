@@ -4,7 +4,6 @@ import streamlit_shadcn_ui as ui
 
 def dashboard():
     st.title("Dashboard")
-    
     cols = st.columns(3)
     with cols[0]:
         ui.metric_card(title="Spending Score", content="5.33",
@@ -15,7 +14,6 @@ def dashboard():
     with cols[2]:
         ui.metric_card(title="Budget Used", content="$1,342.45/$3,000",
                        description="+10.4% budget spending compared to the last month", key="card3")
-    
     trigger_btn = ui.button(text="Trigger Button", key="trigger_btn")
     ui.alert_dialog(show=trigger_btn, title="Alert Dialog", description="This is an alert dialog",
                     confirm_label="OK", cancel_label="Cancel", key="alert_dialog1")
@@ -26,7 +24,6 @@ def dashboard():
     choice = ui.select(options=["Apple", "Banana", "Orange"])
 
     st.markdown(f"Current value: {choice}")
-
 
     with st.sidebar:
         st.write("Welcome to the your Dashboard!")
