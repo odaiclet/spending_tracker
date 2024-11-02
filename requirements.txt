@@ -1,3 +1,4 @@
+pyarrow==14.0.0
 streamlit==1.37.0
 streamlit-authenticator==0.4.1
 streamlit-navigation-bar==3.3.0
@@ -14,4 +15,4 @@ streamlit-vertical-slider==2.5.5
 pandas==2.2.3
 matplotlib==3.9.2
 SQLAlchemy==2.0.36
-psycopg2==2.9.10
+#psycopg2==2.9.10
